@@ -13,6 +13,9 @@
 
 
 @property (strong, nonatomic) IBOutlet UITextField *passwordVal;
+
+@property( strong, nonatomic) IBOutlet UIButton *loginButton;
+
 - (IBAction)backgroundTap:(id)sender;
 
 - (IBAction)loginHandler:(id)sender;
