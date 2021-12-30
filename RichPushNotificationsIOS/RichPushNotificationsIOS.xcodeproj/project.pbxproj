@@ -1,0 +1,695 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 52;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BDBB044F0A32BD145F37E1B4 /* Pods_RichPushNotificationsIOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4105E759E129F8F2B18FCCCB /* Pods_RichPushNotificationsIOS.framework */; };
+		CB45BA2A277AFD60003E82C4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB45BA29277AFD60003E82C4 /* AppDelegate.swift */; };
+		CB45BA2C277AFD60003E82C4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB45BA2B277AFD60003E82C4 /* SceneDelegate.swift */; };
+		CB45BA2E277AFD60003E82C4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB45BA2D277AFD60003E82C4 /* ViewController.swift */; };
+		CB45BA31277AFD60003E82C4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB45BA2F277AFD60003E82C4 /* Main.storyboard */; };
+		CB45BA33277AFD6B003E82C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB45BA32277AFD6B003E82C4 /* Assets.xcassets */; };
+		CB45BA36277AFD6B003E82C4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB45BA34277AFD6B003E82C4 /* LaunchScreen.storyboard */; };
+		CB586370277DACB700AEB30A /* Pods_RichPushNotificationsIOSService.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3873936AE4ABFD8AAF496682 /* Pods_RichPushNotificationsIOSService.framework */; };
+		CB586371277DACB700AEB30A /* Pods_RichPushNotificationsIOSService.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3873936AE4ABFD8AAF496682 /* Pods_RichPushNotificationsIOSService.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CB586374277DAE0A00AEB30A /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = CB586373277DAE0A00AEB30A /* FirebaseAnalytics */; };
+		CB586376277DAE0A00AEB30A /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = CB586375277DAE0A00AEB30A /* FirebaseMessaging */; };
+		CB586378277DAE7E00AEB30A /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = CB586377277DAE7E00AEB30A /* FirebaseMessaging */; };
+		CB7FFF25277CF610006CCDFC /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = CB7FFF24277CF610006CCDFC /* GoogleService-Info.plist */; };
+		CB7FFF5B277D73CC006CCDFC /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB7FFF5A277D73CC006CCDFC /* NotificationService.swift */; };
+		CB7FFF5F277D73CC006CCDFC /* RichPushNotificationsIOSService.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = CB7FFF58277D73CC006CCDFC /* RichPushNotificationsIOSService.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CB7FFF5D277D73CC006CCDFC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CB45BA1E277AFD60003E82C4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CB7FFF57277D73CC006CCDFC;
+			remoteInfo = RichPushNotificationsIOSService;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CB586366277DA5B900AEB30A /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CB586371277DACB700AEB30A /* Pods_RichPushNotificationsIOSService.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB7FFF35277D6A96006CCDFC /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				CB7FFF5F277D73CC006CCDFC /* RichPushNotificationsIOSService.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		07F7D2AD1657193E561C237C /* Pods-RichPushNotificationsIOSService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RichPushNotificationsIOSService.release.xcconfig"; path = "Target Support Files/Pods-RichPushNotificationsIOSService/Pods-RichPushNotificationsIOSService.release.xcconfig"; sourceTree = "<group>"; };
+		0FD44142BB3A020DBC298248 /* Pods-RichPushNotificationsIOS-RichPushNotificationsIOSService.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RichPushNotificationsIOS-RichPushNotificationsIOSService.release.xcconfig"; path = "Target Support Files/Pods-RichPushNotificationsIOS-RichPushNotificationsIOSService/Pods-RichPushNotificationsIOS-RichPushNotificationsIOSService.release.xcconfig"; sourceTree = "<group>"; };
+		201B6D0C6297C87F4853A270 /* Pods-RichPushNotificationsIOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RichPushNotificationsIOS.debug.xcconfig"; path = "Target Support Files/Pods-RichPushNotificationsIOS/Pods-RichPushNotificationsIOS.debug.xcconfig"; sourceTree = "<group>"; };
+		2355BC2DB8AED404AAD24B57 /* Pods-RichPushNotificationsIOSService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RichPushNotificationsIOSService.debug.xcconfig"; path = "Target Support Files/Pods-RichPushNotificationsIOSService/Pods-RichPushNotificationsIOSService.debug.xcconfig"; sourceTree = "<group>"; };
+		3873936AE4ABFD8AAF496682 /* Pods_RichPushNotificationsIOSService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RichPushNotificationsIOSService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4105E759E129F8F2B18FCCCB /* Pods_RichPushNotificationsIOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RichPushNotificationsIOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6CB68E7139C1D4C25B285315 /* Pods-RichPushNotificationsIOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RichPushNotificationsIOS.release.xcconfig"; path = "Target Support Files/Pods-RichPushNotificationsIOS/Pods-RichPushNotificationsIOS.release.xcconfig"; sourceTree = "<group>"; };
+		74365C1A1C7FBA740A04FE31 /* Pods_RichPushNotificationsIOS_RichPushNotificationsIOSService.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RichPushNotificationsIOS_RichPushNotificationsIOSService.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A98227C80ED62525CEDD73ED /* Pods-RichPushNotificationsIOS-RichPushNotificationsIOSService.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RichPushNotificationsIOS-RichPushNotificationsIOSService.debug.xcconfig"; path = "Target Support Files/Pods-RichPushNotificationsIOS-RichPushNotificationsIOSService/Pods-RichPushNotificationsIOS-RichPushNotificationsIOSService.debug.xcconfig"; sourceTree = "<group>"; };
+		CB45BA26277AFD60003E82C4 /* RichPushNotificationsIOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RichPushNotificationsIOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB45BA29277AFD60003E82C4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB45BA2B277AFD60003E82C4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		CB45BA2D277AFD60003E82C4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CB45BA30277AFD60003E82C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CB45BA32277AFD6B003E82C4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CB45BA35277AFD6B003E82C4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB45BA37277AFD6B003E82C4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB58635B277D9C8200AEB30A /* FirebaseMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB586367277DA98000AEB30A /* FirebaseMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB58636B277DAC7A00AEB30A /* FirebaseMessaging */ = {isa = PBXFileReference; lastKnownFileType = folder; name = FirebaseMessaging; path = Pods/FirebaseMessaging; sourceTree = "<group>"; };
+		CB58636C277DAC9C00AEB30A /* FirebaseMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7FFF24277CF610006CCDFC /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		CB7FFF58277D73CC006CCDFC /* RichPushNotificationsIOSService.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RichPushNotificationsIOSService.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7FFF5A277D73CC006CCDFC /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		CB7FFF5C277D73CC006CCDFC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB7FFF63277D9342006CCDFC /* FirebaseMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7FFF67277D954E006CCDFC /* FirebaseMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7FFF6B277D9775006CCDFC /* FirebaseMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB7FFF6F277D9A52006CCDFC /* FirebaseMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = FirebaseMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB809E61277C6034000ECDC0 /* RichPushNotificationsIOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = RichPushNotificationsIOS.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CB45BA23277AFD60003E82C4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB586376277DAE0A00AEB30A /* FirebaseMessaging in Frameworks */,
+				CB586374277DAE0A00AEB30A /* FirebaseAnalytics in Frameworks */,
+				BDBB044F0A32BD145F37E1B4 /* Pods_RichPushNotificationsIOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB7FFF55277D73CC006CCDFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB586378277DAE7E00AEB30A /* FirebaseMessaging in Frameworks */,
+				CB586370277DACB700AEB30A /* Pods_RichPushNotificationsIOSService.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4655FC4A0CF02AA4596748C3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				201B6D0C6297C87F4853A270 /* Pods-RichPushNotificationsIOS.debug.xcconfig */,
+				6CB68E7139C1D4C25B285315 /* Pods-RichPushNotificationsIOS.release.xcconfig */,
+				A98227C80ED62525CEDD73ED /* Pods-RichPushNotificationsIOS-RichPushNotificationsIOSService.debug.xcconfig */,
+				0FD44142BB3A020DBC298248 /* Pods-RichPushNotificationsIOS-RichPushNotificationsIOSService.release.xcconfig */,
+				2355BC2DB8AED404AAD24B57 /* Pods-RichPushNotificationsIOSService.debug.xcconfig */,
+				07F7D2AD1657193E561C237C /* Pods-RichPushNotificationsIOSService.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A11196EA5C11F69FE6549BC1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CB58636C277DAC9C00AEB30A /* FirebaseMessaging.framework */,
+				CB58636B277DAC7A00AEB30A /* FirebaseMessaging */,
+				CB586367277DA98000AEB30A /* FirebaseMessaging.framework */,
+				CB58635B277D9C8200AEB30A /* FirebaseMessaging.framework */,
+				CB7FFF6F277D9A52006CCDFC /* FirebaseMessaging.framework */,
+				CB7FFF6B277D9775006CCDFC /* FirebaseMessaging.framework */,
+				CB7FFF67277D954E006CCDFC /* FirebaseMessaging.framework */,
+				CB7FFF63277D9342006CCDFC /* FirebaseMessaging.framework */,
+				4105E759E129F8F2B18FCCCB /* Pods_RichPushNotificationsIOS.framework */,
+				3873936AE4ABFD8AAF496682 /* Pods_RichPushNotificationsIOSService.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CB45BA1D277AFD60003E82C4 = {
+			isa = PBXGroup;
+			children = (
+				CB7FFF24277CF610006CCDFC /* GoogleService-Info.plist */,
+				CB45BA28277AFD60003E82C4 /* RichPushNotificationsIOS */,
+				CB7FFF59277D73CC006CCDFC /* RichPushNotificationsIOSService */,
+				CB45BA27277AFD60003E82C4 /* Products */,
+				4655FC4A0CF02AA4596748C3 /* Pods */,
+				A11196EA5C11F69FE6549BC1 /* Frameworks */,
+				CB58636A277DAA1F00AEB30A /* Recovered References */,
+			);
+			sourceTree = "<group>";
+		};
+		CB45BA27277AFD60003E82C4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CB45BA26277AFD60003E82C4 /* RichPushNotificationsIOS.app */,
+				CB7FFF58277D73CC006CCDFC /* RichPushNotificationsIOSService.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CB45BA28277AFD60003E82C4 /* RichPushNotificationsIOS */ = {
+			isa = PBXGroup;
+			children = (
+				CB809E61277C6034000ECDC0 /* RichPushNotificationsIOS.entitlements */,
+				CB45BA29277AFD60003E82C4 /* AppDelegate.swift */,
+				CB45BA2B277AFD60003E82C4 /* SceneDelegate.swift */,
+				CB45BA2D277AFD60003E82C4 /* ViewController.swift */,
+				CB45BA2F277AFD60003E82C4 /* Main.storyboard */,
+				CB45BA32277AFD6B003E82C4 /* Assets.xcassets */,
+				CB45BA34277AFD6B003E82C4 /* LaunchScreen.storyboard */,
+				CB45BA37277AFD6B003E82C4 /* Info.plist */,
+			);
+			path = RichPushNotificationsIOS;
+			sourceTree = "<group>";
+		};
+		CB58636A277DAA1F00AEB30A /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				74365C1A1C7FBA740A04FE31 /* Pods_RichPushNotificationsIOS_RichPushNotificationsIOSService.framework */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		CB7FFF59277D73CC006CCDFC /* RichPushNotificationsIOSService */ = {
+			isa = PBXGroup;
+			children = (
+				CB7FFF5A277D73CC006CCDFC /* NotificationService.swift */,
+				CB7FFF5C277D73CC006CCDFC /* Info.plist */,
+			);
+			path = RichPushNotificationsIOSService;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CB45BA25277AFD60003E82C4 /* RichPushNotificationsIOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB45BA3A277AFD6B003E82C4 /* Build configuration list for PBXNativeTarget "RichPushNotificationsIOS" */;
+			buildPhases = (
+				028B5C0D78568673A9B3A4E8 /* [CP] Check Pods Manifest.lock */,
+				CB45BA22277AFD60003E82C4 /* Sources */,
+				CB45BA23277AFD60003E82C4 /* Frameworks */,
+				CB45BA24277AFD60003E82C4 /* Resources */,
+				CB7FFF35277D6A96006CCDFC /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CB7FFF5E277D73CC006CCDFC /* PBXTargetDependency */,
+			);
+			name = RichPushNotificationsIOS;
+			packageProductDependencies = (
+				CB586373277DAE0A00AEB30A /* FirebaseAnalytics */,
+				CB586375277DAE0A00AEB30A /* FirebaseMessaging */,
+			);
+			productName = RichPushNotificationsIOS;
+			productReference = CB45BA26277AFD60003E82C4 /* RichPushNotificationsIOS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CB7FFF57277D73CC006CCDFC /* RichPushNotificationsIOSService */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CB7FFF60277D73CC006CCDFC /* Build configuration list for PBXNativeTarget "RichPushNotificationsIOSService" */;
+			buildPhases = (
+				FC450E3227B299B68D64E716 /* [CP] Check Pods Manifest.lock */,
+				CB7FFF54277D73CC006CCDFC /* Sources */,
+				CB7FFF55277D73CC006CCDFC /* Frameworks */,
+				CB7FFF56277D73CC006CCDFC /* Resources */,
+				CB586366277DA5B900AEB30A /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RichPushNotificationsIOSService;
+			packageProductDependencies = (
+				CB586377277DAE7E00AEB30A /* FirebaseMessaging */,
+			);
+			productName = RichPushNotificationsIOSService;
+			productReference = CB7FFF58277D73CC006CCDFC /* RichPushNotificationsIOSService.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CB45BA1E277AFD60003E82C4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1320;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					CB45BA25277AFD60003E82C4 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					CB7FFF57277D73CC006CCDFC = {
+						CreatedOnToolsVersion = 13.2.1;
+					};
+				};
+			};
+			buildConfigurationList = CB45BA21277AFD60003E82C4 /* Build configuration list for PBXProject "RichPushNotificationsIOS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CB45BA1D277AFD60003E82C4;
+			packageReferences = (
+				CB586372277DAE0A00AEB30A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = CB45BA27277AFD60003E82C4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CB45BA25277AFD60003E82C4 /* RichPushNotificationsIOS */,
+				CB7FFF57277D73CC006CCDFC /* RichPushNotificationsIOSService */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CB45BA24277AFD60003E82C4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB45BA36277AFD6B003E82C4 /* LaunchScreen.storyboard in Resources */,
+				CB7FFF25277CF610006CCDFC /* GoogleService-Info.plist in Resources */,
+				CB45BA33277AFD6B003E82C4 /* Assets.xcassets in Resources */,
+				CB45BA31277AFD60003E82C4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB7FFF56277D73CC006CCDFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		028B5C0D78568673A9B3A4E8 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RichPushNotificationsIOS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FC450E3227B299B68D64E716 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RichPushNotificationsIOSService-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CB45BA22277AFD60003E82C4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB45BA2E277AFD60003E82C4 /* ViewController.swift in Sources */,
+				CB45BA2A277AFD60003E82C4 /* AppDelegate.swift in Sources */,
+				CB45BA2C277AFD60003E82C4 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CB7FFF54277D73CC006CCDFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CB7FFF5B277D73CC006CCDFC /* NotificationService.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CB7FFF5E277D73CC006CCDFC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CB7FFF57277D73CC006CCDFC /* RichPushNotificationsIOSService */;
+			targetProxy = CB7FFF5D277D73CC006CCDFC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CB45BA2F277AFD60003E82C4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB45BA30277AFD60003E82C4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CB45BA34277AFD6B003E82C4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CB45BA35277AFD6B003E82C4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CB45BA38277AFD6B003E82C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CB45BA39277AFD6B003E82C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CB45BA3B277AFD6B003E82C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 201B6D0C6297C87F4853A270 /* Pods-RichPushNotificationsIOS.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RichPushNotificationsIOS/RichPushNotificationsIOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = RichPushNotificationsIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TO-UPDATE-FROM-APPLE";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB45BA3C277AFD6B003E82C4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CB68E7139C1D4C25B285315 /* Pods-RichPushNotificationsIOS.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = RichPushNotificationsIOS/RichPushNotificationsIOS.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = RichPushNotificationsIOS/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "TO-UPDATE-FROM-APPLE";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CB7FFF61277D73CC006CCDFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2355BC2DB8AED404AAD24B57 /* Pods-RichPushNotificationsIOSService.debug.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RichPushNotificationsIOSService/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RichPushNotificationsIOSService;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "TO-UPDATE-FROM-APPLE";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CB7FFF62277D73CC006CCDFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 07F7D2AD1657193E561C237C /* Pods-RichPushNotificationsIOSService.release.xcconfig */;
+			buildSettings = {
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_BITCODE = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = RichPushNotificationsIOSService/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = RichPushNotificationsIOSService;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 15.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "TO-UPDATE-FROM-APPLE";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CB45BA21277AFD60003E82C4 /* Build configuration list for PBXProject "RichPushNotificationsIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB45BA38277AFD6B003E82C4 /* Debug */,
+				CB45BA39277AFD6B003E82C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB45BA3A277AFD6B003E82C4 /* Build configuration list for PBXNativeTarget "RichPushNotificationsIOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB45BA3B277AFD6B003E82C4 /* Debug */,
+				CB45BA3C277AFD6B003E82C4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CB7FFF60277D73CC006CCDFC /* Build configuration list for PBXNativeTarget "RichPushNotificationsIOSService" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CB7FFF61277D73CC006CCDFC /* Debug */,
+				CB7FFF62277D73CC006CCDFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CB586372277DAE0A00AEB30A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CB586373277DAE0A00AEB30A /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB586372277DAE0A00AEB30A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		CB586375277DAE0A00AEB30A /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB586372277DAE0A00AEB30A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		CB586377277DAE7E00AEB30A /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CB586372277DAE0A00AEB30A /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = CB45BA1E277AFD60003E82C4 /* Project object */;
+}
